@@ -14,22 +14,39 @@
       img{
         object-fit: cover;
       }
-      h2{
-        text-align: right;
-      }
 
     </style>
   </head>
   <body>
 
+    <div id="dark">
+    </div>
 
-    <ul class="nav flex-column">
-      <li><a href="index.htm">Home</a></li>
-      <li> <a href="index.htm#About">About</a> </li>
-      <li> <a href="#">Contact</a> </li>
-      <li> <a href="3D.htm">3D</a> </li>
-      <li> <a href="#">Services</a> </li>
-    </ul>
+    <nav class="nav navbar navbar-expand-md navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+      onclick=
+      "if(document.getElementById('dark').style.opacity==.6){
+        document.getElementById('dark').style.opacity=0;
+        document.getElementById('dark').style.display='none';
+      }
+      else{
+        document.getElementById('dark').style.opacity=.6;
+        document.getElementById('dark').style.display='block';
+      }">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item" > <a href="#" style="opacity: 1;" class="nav-link">Home</a> </li>
+          <li class="nav-item"> <a href="#About" class="nav-link">About</a> </li>
+          <li class="nav-item"> <a href="#" class="nav-link">Contact</a> </li>
+          <li class="nav-item"> <a href="3D.htm" class="nav-link">3D</a> </li>
+          <li class="nav-item"> <a href="#" class="nav-link">Services</a> </li>
+        </ul>
+      </div>
+    </nav>
 
 
     <div class="container">
@@ -43,7 +60,7 @@
     <div class="container-fluid">
       <div class="row condense">
         <div class="col-md-5">
-          <h2>Isaac</h2>
+          <h2 class="right">Isaac</h2>
           <div class="card">
             <img src="Images/Isaac.png" alt="Isaac">
             <img src="Images/IsaacWip.png" class="front" alt="Isaac">
@@ -56,7 +73,7 @@
         </div>
 
         <div class="col-md-5 offset">
-          <h2 style="text-align: left;">Donut</h2>
+          <h2 id="donut">Donut</h2>
           <div class="card">
             <img src="Images/donut.png"  alt="donut">
             <img src="Images/donutWip.png" class="front" alt="donut">
@@ -67,7 +84,7 @@
 
       <div class="row condense">
         <div class="col-md-5">
-          <h2>Pendulum</h2>
+          <h2 class="right">Pendulum</h2>
           <div class="card">
             <img src="Images/Pendulum.png" alt="Pendulum">
             <img src="Images/PendulumWip.png" class="front" alt="Pendulum">
