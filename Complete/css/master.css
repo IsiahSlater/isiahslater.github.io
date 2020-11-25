@@ -83,6 +83,7 @@ h2{
 }
 img{
   width: 100%;
+  border: 1px white solid;
 }
 
 .card .front{
@@ -153,7 +154,7 @@ li:hover{
     display: none;
   }
   h1{
-    font-size: 100px;
+    font-size: 80px;
     margin-bottom: 5px;
   }
  .right, #donut{
