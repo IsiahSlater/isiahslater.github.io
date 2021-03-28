@@ -1,5 +1,6 @@
 html{
-  border: 1px gold solid;
+  border: 1px MediumSpringGreen solid;
+  scroll-behavior: smooth;
 }
 .container-fluid{
   padding: 0;
@@ -20,7 +21,7 @@ html{
 
 body{
   background-color: #171010;
-  outline: 1px solid #FFBA40;
+  outline: 1px solid MediumSpringGreen;
 }
 h1,h2, p, a, li, nav-item{
   color: #fff;
@@ -34,7 +35,7 @@ h1,h2, p, a, li, nav-item{
   mix-blend-mode: difference;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
-  color: gold;
+  color: MediumSpringGreen;
   transition: .5s;
 }
 ul{
@@ -44,7 +45,7 @@ ul{
   line-height: 5em;
 }
 a:hover{
-  color: gold;
+  color: MediumSpringGreen;
   transition: .5s;
   text-decoration: none;
 }
@@ -79,11 +80,16 @@ h2{
   text-align: right;
 }
 .gold{
-  -webkit-text-stroke: 1.5px gold;
+  -webkit-text-stroke: 1.5px MediumSpringGreen;
 }
+
 img{
   width: 100%;
   border: 1px white solid;
+}
+
+iframe{
+  border: 1px MediumSpringGreen solid;
 }
 
 .card .front{
@@ -103,13 +109,13 @@ img{
 }
 
 li:hover{
-  color: gold;
+  color: MediumSpringGreen;
   transition: 1s;
 }
 #image{
   height: 80%;
   object-fit: cover;
-  border: gold 1px solid;
+  border: MediumSpringGreen 1px solid;
   transition: all .5s;
 }
 
