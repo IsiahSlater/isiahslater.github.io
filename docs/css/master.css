@@ -71,7 +71,7 @@ h1{
 }
 
 h2{
-  -webkit-text-stroke: 1px white;
+  color: MediumSpringGreen;
 }
 #donut{
   text-align: left;
@@ -140,6 +140,10 @@ li:hover{
   height: 60vh;
 }
 
+.borders{
+  border-left: solid 1px black;
+}
+
 #dark{
   padding:0;
   margin:0;
@@ -152,6 +156,10 @@ li:hover{
   opacity: 0;
   z-index: 1;
   display: none;
+}
+.btn-light{
+  background-color: #fff;
+  border-color: #fff;
 }
 
 @media only screen and (max-width: 756px){
