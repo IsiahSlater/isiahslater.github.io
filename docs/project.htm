@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
     <link rel="icon" href="images/logo.gif" type="image/gif" sizes="16x16">
-
-
-    <!--import animate-on-scroll (AOS) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <style media="screen">
+      .col-md-5{
+        padding: 0;
+        padding-top: 30px;
+      }
+      img{
+        object-fit: cover;
+      }
+
+    </style>
   </head>
   <body>
 
@@ -39,59 +44,64 @@
 
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav flex-column">
-          <li class="nav-item" > <a href="#" style="opacity: 1;" class="nav-link">Home</a> </li>
-          <li class="nav-item"> <a href="#About" class="nav-link">About</a> </li>
-          <li class="nav-item"> <a href="#Skills" class="nav-link">Skills</a> </li>
+          <li class="nav-item" > <a href="index.htm" style="opacity: 1;" class="nav-link">Home</a> </li>
+          <li class="nav-item"> <a href="index.htm#About" class="nav-link">About</a> </li>
+          <li class="nav-item"> <a href="index.htm#Skills" class="nav-link">Skills</a> </li>
           <li class="nav-item"> <a href="#Contact" class="nav-link">Contact</a> </li>
-          <li class="nav-item"> <a href="3D.htm" class="nav-link">3D</a> </li>
+          <li class="nav-item"> <a href="#" class="nav-link">3D</a> </li>
           <li class="nav-item"> <a href="website.htm" class="nav-link">Websites</a> </li>
         </ul>
       </div>
     </nav>
 
 
-    <!-- Intro -->
     <div class="container">
       <div class="row start">
         <div class="col-sm-12">
-          <h1>Animator,</h1>
-          <h1 class="gold">Designer,</h1>
-          <h1>Programmer</h1>
-        </div>
-      </div>
-
-      <!-- About -->
-      <div class="row d-flex align-items-center" id="About" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="600">
-        <div class="col-sm-4">
-          <img src="Images/Portrait.jpg" alt="Portrait">
-        </div>
-        <div class="col-sm-8">
-          <h2>About</h2>
-          <p>Spending the past three years in University studying computer science and art, I have come to gain an appreciation and understanding of multiple media. With my remaining time in study, I hope to push the bounds of what is known and what is yet to be discovered</p>
-        </div>
-      </div>
-
-      <!-- Skills -->
-      <div class="container-fluid pt-5" id="Skills">
-      </div>
-      <div class="row pt-5" >
-        <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1200" >
-          <h2>Skills</h2>
-          <ul class="long">
-            <li onmouseover="document.getElementById('image').src='Images/Donut.jpg'">3D Modeling</li>
-            <li onmouseover="document.getElementById('image').src='Images/animation.gif'">Animation</li>
-            <li onmouseover="document.getElementById('image').src='Images/Home.jpg'">Web Design</li>
-            <li onmouseover="document.getElementById('image').src='Images/Code.jpg'">Web Development</li>
-          </ul>
-        </div>
-        <div class="col-sm-6 change" data-aos="fade-left" data-aos-duration="1200">
-          <img src="Images/Home.jpg" id="image" alt="Detail">
+          <h1 class="gold title" style="margin-top: 30vh;">3D Projects</h1>
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="container-fluid foot" id="Contact" data-aos="fade-up">
+    <div class="container-fluid">
+      <div class="row condense">
+        <div class="col-md-5">
+          <h2 class="right">Isaac</h2>
+          <div class="card">
+            <img src="Images/Isaac.jpg" alt="Isaac">
+            <img src="Images/IsaacWip.jpg" class="front" alt="Isaac">
+          </div>
+
+        </div>
+
+        <div class="col-md-2">
+
+        </div>
+
+        <div class="col-md-5 offset">
+          <h2 id="donut">Donut</h2>
+          <div class="card">
+            <img src="Images/Donut.jpg"  alt="donut">
+            <img src="Images/DonutWip.jpg" class="front" alt="donut">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row condense">
+        <div class="col-md-5">
+          <h2 class="right">Pendulum</h2>
+          <div class="card">
+            <img src="Images/Pendulum.jpg" alt="Pendulum">
+            <img src="Images/PendulumWip.jpg" class="front" alt="Pendulum">
+          </div>
+
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid foot" id="Contact">
       <div class="container">
         <h1 class="black">Want To Reach Out?</h1>
         <p class="black">isiahmslater@gmail.com</p>
@@ -118,6 +128,5 @@
     <script>
       AOS.init();
     </script>
-
   </body>
 </html>

@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
     <link rel="icon" href="images/logo.gif" type="image/gif" sizes="16x16">
+
+    <!--import animate-on-scroll (AOS) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -64,7 +68,7 @@
     </div>
 
     <div class="container">
-      <div class="row ">
+      <div class="row" data-aos="fade-up" data-aos-offset="300">
         <h2 class="right">Slater Luxury Rental Apartments</h2>
         <div class="col-md-12">
 
@@ -77,7 +81,7 @@
         </div>
       </div>
 
-      <div class="row ">
+      <div class="row" data-aos="fade-left" data-aos-offset="300">
         <h2 class="right">Truman's Gaming League</h2>
         <div class="col-md-12">
 
@@ -90,15 +94,16 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid foot" id="Contact">
+    <div class="container-fluid foot" id="Contact" data-aos="fade-up">
       <div class="container">
         <h1 class="black">Want To Reach Out?</h1>
+        <p class="black">isiahmslater@gmail.com</p>
         <p class="black">660-956-5691</p>
         <div class="btn-group">
           <a href="https://www.facebook.com/IsiahInventions" class="borders">
             <button type="button"class="btn btn-light black">Facebook</button>
           </a>
-          <a href="https://twitter.com/ZombiePieZ" class="borders">
+          <a href="https://twitter.com/awesopossum" class="borders">
             <button type="button"class="btn btn-light black ">Twitter</button>
           </a>
           <a href="https://www.instagram.com/awesopossum/" class="borders">
@@ -110,5 +115,11 @@
         </div>
       </div>
     </div>
+
+    <!-- Scripts for aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
