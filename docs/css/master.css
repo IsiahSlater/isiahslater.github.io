@@ -3,6 +3,9 @@ html{
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+
+
 .container-fluid{
   padding: 0;
 }
@@ -18,7 +21,7 @@ html{
   text-align: left;
 }
 .offset{
-  margin-top: 30vh;
+  margin-top: -30vh;
 }
 
 body{
@@ -94,12 +97,15 @@ h2{
 img{
   width: 100%;
   border: 1px white solid;
+  max-height: 90vh;
 }
 
 iframe{
   border: 1px MediumSpringGreen solid;
 }
-
+.card{
+  background-color: rgba(0, 0, 0, 0);
+}
 .card .front{
   opacity: 0;
   position: absolute;
@@ -149,6 +155,11 @@ li:hover{
   height: 60vh;
 }
 
+.condense h2{
+  padding-top: 8px;
+  height: inherit;
+}
+
 .borders{
   border-left: solid 1px black;
 }
@@ -170,18 +181,29 @@ li:hover{
   background-color: #fff;
   border-color: #fff;
 }
+.show-sm{
+  visibility: hidden;
+}
 
 
-
-@media only screen and (max-width: 756px){
+@media only screen and (max-width: 992px){
   #image{
     display: none;
+  }
+  .dummy{
+    height: 0;
+  }
+  .visible-lg{
+    visibility: hidden;
+  }
+  .show-sm{
+    visibility: visible;
   }
   h1{
     font-size: 17vw;
     margin-bottom: 5px;
   }
- .right, #donut{
+ .right, .condense h2{
   text-align: center;
 }
   .row{
@@ -197,6 +219,7 @@ li:hover{
   .condense{
     overflow:visible;
     margin-bottom: 20px;
+    min-height: auto;
     height: auto;
   }
   .offset{

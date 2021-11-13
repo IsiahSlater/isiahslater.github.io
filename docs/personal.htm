@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="icon" href="images/logo.gif" type="image/gif" sizes="16x16">
+
+
+    <!--import animate-on-scroll (AOS) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style media="screen">
+      .col-md-5{
+        padding: 0;
+        padding-top: 30px;
+      }
+      img{
+        object-fit: cover;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="dark">
+    </div>
+
+    <nav class="nav navbar navbar-expand-md navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+      onclick=
+      "if(document.getElementById('dark').style.opacity==.6){
+        document.getElementById('dark').style.opacity=0;
+        document.getElementById('dark').style.display='none';
+      }
+      else{
+        document.getElementById('dark').style.opacity=.6;
+        document.getElementById('dark').style.display='block';
+      }">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item" > <a href="index.htm" style="opacity: 1;" class="nav-link">Home</a> </li>
+          <li class="nav-item"> <a href="index.htm#About" class="nav-link">About</a> </li>
+          <li class="nav-item"> <a href="index.htm#Skills" class="nav-link">Skills</a> </li>
+          <li class="nav-item indent"> <a href="#" class="nav-link">3D</a> </li>
+          <li class="nav-item indent"> <a href="animations.htm" class="nav-link">Animations</a> </li>
+          <li class="nav-item indent"> <a href="website.htm" class="nav-link">Websites</a> </li>
+          <li class="nav-item"> <a href="#Contact" class="nav-link">Contact</a> </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="row start">
+        <div class="col-sm-12">
+          <h1 class="gold title" style="margin-top: 30vh;">3D Projects</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" data-aos="fade-right" data-aos-offset="300">
+      <div class="row my-5">
+        <div class="col-md-12">
+          <h2 class="right">IRL Series</h2>
+          <div class="card">
+            <img src="Images/Personal/selfPortrait5.png" alt="IRL" class="img-fluid">
+            <img src="Images/Personal/UnderTreeMid.png" class="front" alt="IRL">
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md-12" data-aos="fade-left" data-aos-offset="300">
+          <h2 id="donut">Spooky Series</h2>
+          <div class="card">
+            <img src="Images/Personal/shalkorspook.png"  alt="spookySeries">
+            <img src="Images/Personal/blitzSpook.png" class="front" alt="spookySeries">
+          </div>
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-right" data-aos-offset="300">
+        <div class="col-md-12">
+          <h2 class="right">Fox and the Serpent</h2>
+          <div class="card">
+            <img src="Images/3D/FoxSerpent.png" alt="Pendulum">
+            <img src="Images/3D/FoxSerpentWip.jpg" class="front" alt="Pendulum">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid foot" id="Contact" data-aos="fade-up">
+      <div class="container">
+        <h1 class="black">Want To Reach Out?</h1>
+        <p class="black">isiahmslater@gmail.com</p>
+        <p class="black">660-956-5691</p>
+        <div class="btn-group">
+          <a href="https://www.facebook.com/IsiahInventions" class="borders">
+            <button type="button"class="btn btn-light black">Facebook</button>
+          </a>
+          <a href="https://twitter.com/awesopossum" class="borders">
+            <button type="button"class="btn btn-light black ">Twitter</button>
+          </a>
+          <a href="https://www.instagram.com/awesopossum/" class="borders">
+            <button type="button"class="btn btn-light black">Instagram</button>
+          </a>
+          <a href="mailto:isiahmslater@gmail.com" class="borders" style="border-right: solid 1px black;">
+            <button type="button"class="btn btn-light black">Email</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts for aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
