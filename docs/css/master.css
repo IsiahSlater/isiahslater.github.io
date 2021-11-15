@@ -79,6 +79,10 @@ h1{
 }
 .black{
     word-break: normal;
+    padding-top: 1em;
+}
+.black h1{
+
 }
 
 h2{
@@ -97,7 +101,7 @@ h2{
 img{
   width: 100%;
   border: 1px white solid;
-  max-height: 90vh;
+  max-height: 80vh;
 }
 
 iframe{
@@ -157,7 +161,6 @@ li:hover{
 
 .condense h2{
   padding-top: 8px;
-  height: inherit;
 }
 
 .borders{
@@ -183,6 +186,9 @@ li:hover{
 }
 .show-sm{
   visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -195,9 +201,14 @@ li:hover{
   }
   .visible-lg{
     visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
   }
   .show-sm{
     visibility: visible;
+    height: auto;
+    margin-top: 8px;
   }
   h1{
     font-size: 17vw;
