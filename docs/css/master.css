@@ -11,7 +11,7 @@ html{
 }
 .nav{
   position: fixed;
-  right: 10%;
+  right: 5%;
   bottom: 10%;
   mix-blend-mode: difference;
   transition: 1s;
@@ -247,14 +247,15 @@ li:hover{
     font-size: 10vw;
   }
   .show{
-    font-size: 10vw;
+    font-size: 6vh;
   }
   .navbar-toggler{
     mix-blend-mode: difference;
   }
 
   .indent{
-    margin: 0;
+    margin-left: : .5em;
+    font-size: 5vh;
     color: MediumSpringGreen;
   }
 
