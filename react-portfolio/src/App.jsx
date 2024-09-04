@@ -5,6 +5,7 @@ import { Hero } from './components/Hero/Hero';
 import { Navbar } from './components/Navbar/Navbar';
 import "@fontsource/roboto";
 import "@fontsource/outfit";
+import { Experience } from './components/Experience/Experience';
 
 function App() {
   
@@ -14,7 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      
+      <Experience />
     </div>
   );
 }
